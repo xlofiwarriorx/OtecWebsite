@@ -1,0 +1,256 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+@font-face {
+	font-family: myriadpro;
+	src: local("MYRIADPRO-REGULAR");
+}
+@body {
+	font-family: "myriadpro", "Arial", sans-serif;
+}
+
+.menu {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.menulist {
+	display: flex;
+	padding: 25px 30px 25px 30px;
+	font-size: 33px;
+}
+.nwlist {
+	display: flex;
+	padding: 30px 30px 0px 0px;
+}
+.listitems {
+	padding: 0px 47px 0px 0px;
+}
+.nwitems {
+	padding: 0px 15px 0px 0px;
+}
+.contacts {
+	display: flex;
+	background-color: black;
+	justify-content: space-between;
+}
+.Contactlogo {
+	margin: 0px 0px 10px 0px;
+	padding: 10px 0px 0px 0px;
+}
+.haircutstext {
+	color: white;
+	padding: 0px 0px 15px 0px;
+	font-size: 20pt;
+}
+.logopart {
+	padding: 0px 0px 0px 30px;
+}
+.placeinfo {
+	color: white;
+	font-size: 20pt;
+}
+.adress {
+padding: 50px 0px 0px 0px;
+}
+.worktime {
+padding: 20px 0px 0px 0px;
+}
+.boldadress {
+	font-weight: bold;
+}
+.boldworktime {
+	font-weight: bold;
+}
+.telephone {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.number {
+	font-size: 25pt;
+	padding: 30px 30px 0px 0px;
+	margin: 0px 0px 20px 0px;
+}
+.callback {
+	font-size: 20pt;
+	padding: 15px 20px 15px 20px;
+	border-color: white;
+	border-radius: 10px;
+}
+.call {
+	padding: 0px 0px 30px 0px;
+}
+.hairpic {
+	min-width: 100%;
+}
+.apptext {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	bottom: 85px;
+	margin: -113px;
+}
+.appointment {
+}
+.appbut {
+	font-size: 35pt;
+	padding: 30px 15px;
+	background-color: white;
+	border-radius: 10px;
+}
+.hr1 {
+	width: 30%;
+	border: 5px;
+}
+.prices {
+	margin: 200px 0px 0px 0px;
+	display: flex;
+	justify-content: space-around;
+}
+.servicestext {
+	font-size: 35pt;
+	font-weight: bold;
+}
+.mustachepic {
+	display: flex;
+	justify-content: center;
+	padding: 34px 0px 0px 0px;
+}
+.bb1 {
+	width: 30%;
+	height: 5px;
+	background-color: black;
+	margin: 60px 0px 0px 0px;
+}
+.services {
+	display: flex;
+	justify-content: space-around;
+	padding: 85px 0px 0px 0px;
+	font-size: 25pt;
+	/* align-items: center; */
+}
+
+.bold {
+	font-weight: bold;
+	margin: 0px 0px 45px 0px;
+}
+.space {
+	margin: 0px 0px 45px 0px;
+}
+.slist {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+}
+.center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.prices2 {
+	margin: 100px 0px 0px 0px;
+	display: flex;
+	justify-content: space-around;
+}
+.mappic {
+	display: flex;
+	justify-content: center;
+	padding: 34px 0px 0px 0px;
+	margin: 0px 0px 65px 0px;
+}
+.spacedown {
+	margin: 25px;
+	display: flex;
+	align-items: center;
+}
+.contactslist {
+	display: flex;
+	justify-content: space-around;
+	font-size: 25pt;
+}
+.iconspace {
+	margin: 0px 25px 0px 0px;
+}
+.ph {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.mp{
+
+}
+.em{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.arh {
+	margin: 0px 0px 5px 0px;
+}
+.geomap {
+	padding: 60px 50px 60px 50px;
+}
+.geoscreen {
+	min-width: 100%;
+}
+.footer {
+	height: 160px;
+	background-color: black;
+	display: flex;
+	min-width: 100%;
+	justify-content: space-between;
+}
+.logopart2 {
+	padding: 0px 0px 0px 30px;
+	display: inline;
+}
+.footmenu {
+	color: white;
+	font-size: 25pt;
+	display: flex;
+	align-items: center;
+	padding: 0px 150px 0px 0px;
+	justify-content: end;
+}
+.footitem {
+	margin: 0px 45px 0px 0px;
+}
