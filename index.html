@@ -5,118 +5,127 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+	<title>Barbershop</title>
 </head>
 <body vlink="gray">
 	<header class="header">
-		<nav class="menu">
-			<div class="navigation">
-				<ul class="menulist">
-					<li class="listitems"><a href="">Услуги</a></li>
-					<li class="listitems"><a href="">Контакты</a></li>
-					<li class="listitems"><a href="">Вакансии</a></li>
-					<li class="listitems"><a href="">Косметика</a></li>
-				</ul>
-			</div>
-			<div class="networks">
-				<ul class="nwlist">
-					<li class="nwitems"><a href=""><img src="img/vk icon.png" alt="значок Вконтакте"></a></li>
-					<li><a href=""><img src="img/inst icon.png" alt="значок Инстаграм"></a></li>
-				</ul>
-			</div>
-		</nav>
+		<ul class="header__menu menu">
+			<li class="menu__item"><a href="">Услуги</a></li>
+			<li class="menu__item"><a href="">Контакты</a></li>
+			<li class="menu__item"><a href="">Вакансии</a></li>
+			<li class="menu__item"><a href="">Косметика</a></li>
+		</ul>
+		<div class="header__mediaicons mediaicons">
+			<a href="" class="mediaicons__item"><img src="img/vk icon.png" alt="логотип Вконтакте"></a>
+			<a href="" class="mediaicons__item"><img src="img/inst icon.png" alt="логотип Инстаграм"></a>
+		</div>
 	</header>
-	<div class="contacts">
-		<ul class="logopart">
-			<li class="Contactlogo"><img src="img/logo.png" alt="Логотип"></li>
-			<li class="haircutstext">Мужские стрижки</li>
-		</ul>
-		<ul class="placeinfo">
-			<li class="adress"><span class="boldadress">Адрес:</span> г. Архангельск, ул. Вологодская 10</li>
-			<li class="worktime"><span class="boldworktime">Часы работы:</span> 10:00 - 22:00</li>
-		</ul>
-		<ul class="telephone">
-			<li class="number">+7 (921) 039-89-29</li>
-			<li class="call"><a href=""><button class="callback">Обратный звонок</button></a></li>
-		</ul>
+	<div class="title">
+		<div class="title__body">
+			<div class="title__logo logo">
+				<div class="logo__item"><img src="img/logo.png" alt="логотип барбершопа"></div>
+				<div class="logo__item">Мужские стрижки</div>
+			</div>
+			<div class="title__working-mode">
+				<div class="title__item-mode"> <span class="title__bold">Адрес:</span> г. Архангельск, ул. Вологодская 10</div>
+				<div class="title__item-mode"> <span class="title__bold">Часы работы:</span> 10:00 - 22:00</div>
+			</div>
+			<div class="title__contacts">
+				<div class="title__number">+7 (921) 039-89-29</div>
+				<form>
+					<button class="title__button button">Обратный звонок</button>
+				</form>
+			</div>
+		</div>
 	</div>
 	<div class="appointment">
-		<img class="hairpic" src="img/haircutpic.png" alt="Фоновая картинка со стрижкой">
-		<span class="apptext">
-			<a href=""><button class="appbut">Записаться онлайн</button></a>
-		</span>
-	</div>
-	<div class="prices">
-		<div class="bb1"></div>
-		<div>
-			<ul>
-				<li class="servicestext">Услуги и цены</li>
-				<li class="mustachepic"><img src="img/DecorateMustache.png" alt="Картинка усы"></li>
-			</ul>
+		<div class="appointment__body">
+			<div class="appointment__title">
+				КУПИМ КОНДЕР НЕДОРОГО
+			</div>
+			<div class="appointment__subtitle">
+				Бля кондер нужен, сначала можем обогрев намутить на время, но димас говорит свой сто проц надо покупать
+			</div>
+			<form>
+				<button class="appointment__button button">Записаться онлайн</button>
+			</form>
 		</div>
-		<!-- <div> -->
-			<div class="bb1"></div>
-		<!-- </div> -->
 	</div>
-	<div class="services">
-		<ul class="slist">
-			<li class="space">Стрижка</li>
-			<li class="space">Стрижка отца и сына</li>
-			<li>Стрижка машинкой</li>
-		</ul>
-		<ul class="center">
-			<li class="bold">PRO Барбер</li>
-			<li class="space">500р</li>
-			<li class="space">500р</li>
-			<li>500р</li>
-		</ul>
-		<ul class="center">
-			<li class="bold">Младший Барбер</li>
-			<li class="space">500р</li>
-			<li class="space">500р</li>
-			<li>500р</li>
-		</ul>
-	</div>
-	<div class="prices2">
-		<div class="bb1"></div>
-		<div>
-			<ul>
-				<li class="servicestext">Контакты</li>
-				<li class="mappic"><img src="img/map.png" alt="Картинка усы"></li>
-			</ul>
+	<div class="prices-header">
+		<div class="prices-header__header-line header-line">
+			<div class="header-line__horizontal"></div>
+			<div class="header-line__header">
+				<div class="header-line__text">Услуги и цены</div>
+				<img src="img/DecorateMustache.png" alt="картинка усы" class="header-line__pic">
+			</div>
+			<div class="header-line__horizontal"></div>
 		</div>
-		<!-- <div> -->
-			<div class="bb1"></div>
-		<!-- </div> -->
 	</div>
-	<div class="contactslist">
-		<ul class="ph">
-			<li class="spacedown"><img class="iconspace" src="img/call.png" alt="иконка телефона">Телефон</li>
-			<li>+7 (921) 039-89-29</li>
+	<div class="pricelist">
+		<ul class="pricelist__services">
+			<li class="pricelist__item pricelist__item-bold">Стрижка</li>
+			<li class="pricelist__item pricelist__item-bold">Стрижка машинкой</li>
+			<li class="pricelist__item pricelist__item-bold">Стрижка отца и сына</li>
 		</ul>
-		<ul class="mp">
-			<li  class="spacedown"><img class="iconspace" src="img/minimap.png" alt="иконка геолокации">Адрес</li>
-			<li class="arh">г. Архангельск,</li>
-			<li>ул. Вологодская 10</li>
+		<ul class="pricelist__prices">
+			<li class="pricelist__item pricelist__item-bold">PRO барбер</li>
+			<li class="pricelist__item">500₽</li>
+			<li class="pricelist__item">500₽</li>
+			<li class="pricelist__item">500₽</li>
 		</ul>
-		<ul class="em">
-			<li class="spacedown"><img class="iconspace" src="img/message.png" alt="E-mail">E-mail</li>
-			<li>otecbarber@gmail.com</li>
+		<ul class="pricelist__prices">
+			<li class="pricelist__item pricelist__item-bold">Младший барбер</li>
+			<li class="pricelist__item">500₽</li>
+			<li class="pricelist__item">500₽</li>
+			<li class="pricelist__item">500₽</li>
+		</ul>
+	</div>
+	<div class="contacts-header">
+		<div class="contacts-header__header-line header-line">
+			<div class="header-line__horizontal"></div>
+			<div class="header-line__header">
+				<div class="header-line__text">Контакты</div>
+				<img src="img/map.png" alt="картинка карта" class="header-line__pic">
+			</div>
+			<div class="header-line__horizontal"></div>
+		</div>
+	</div>
+	<div class="contacts-list">
+		<ul class="contacts-list__list">
+			<li class="contacts-list__item">
+				<img src="img/call.png" alt="телефонная трубка">
+				<span class="contacts-list__text contacts-list__text-bold">Телефон</span>
+			</li>
+			<li class="contacts-list__item contacts-list__text">+7(921)0398929</li>
+		</ul>
+		<ul class="contacts-list__list">
+			<li class="contacts-list__item">
+				<img src="img/minimap.png" alt="геометка">
+				<span class="contacts-list__text contacts-list__text-bold">Адрес</span>
+			</li>
+			<li class="contacts-list__item contacts-list__text">г.Архангельск, <br>ул. Вологодская 10</li>
+		</ul>
+		<ul class="contacts-list__list">
+			<li class="contacts-list__item">
+				<img src="img/message.png" alt="E-mail">
+				<span class="contacts-list__text contacts-list__text-bold">E-mail</span>
+			</li>
+			<li class="contacts-list__item contacts-list__text">otecbarber@gmail.com</li>
 		</ul>
 	</div>
 	<div class="geomap">
-		<img class="geoscreen" src="img/geomap.png" alt="геолокация">
+		<img src="img/geomap.png" alt="карта с адресом" class="geomap__image">
 	</div>
 	<footer class="footer">
-		<ul class="logopart2">
-			<li class="Contactlogo"><img src="img/logo.png" alt="Логотип"></li>
-			<li class="haircutstext">Мужские стрижки</li>
-		</ul>
-		<ul class="footmenu">
-			<li class="footitem"><a href="">Услуги</a></li>
-			<li class="footitem"><a href="">Контакты</a></li>
-			<li class="footitem"><a href="">Вакансии</a></li>
-			<li class="footitem"><a href="">Косметика</a></li>
+		<div class="footer__logo logo">
+			<div class="logo__item"><img src="img/logo.png" alt="логотип барбершопа"></div>
+			<div class="logo__item">Мужские стрижки</div>
+		</div>
+		<ul class="footer__menu menu">
+			<li class="menu__item"><a href="">Услуги</a></li>
+			<li class="menu__item"><a href="">Контакты</a></li>
+			<li class="menu__item"><a href="">Вакансии</a></li>
+			<li class="menu__item"><a href="">Косметика</a></li>
 		</ul>
 	</footer>
 </body>
