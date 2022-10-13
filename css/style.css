@@ -44,11 +44,40 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	justify-content: space-between;
 	align-items: center;
 }
+.header__menu {
+	margin-right: 50px;
+}
 .menu {
 	display: flex;
 	font-size: 25pt;
 	align-items: center;
 }
+@media (max-width: 1200px) {
+	.menu {
+		flex-wrap: wrap;
+	}
+	.title__body {
+		flex-wrap: wrap;
+	}
+	.title__logo {
+		margin-right: 50px;
+	}
+	.title__working-mode {
+		margin: 0px 50px 0px 0px;
+	}
+	.title__contacts {
+		
+	}
+}
+@media (max-width: 1112px) {
+	.title__working-mode, .title__contacts {
+		margin-top: 50px;
+	}
+	.title__contacts {
+		margin-bottom: 10px;
+	}
+}
+
 .menu__item {
 	margin-right: 50px;
 }
@@ -63,7 +92,7 @@ margin-left: 0px;
 }
 .mediaicons {
 	display: flex;
-	justify-content: center;
+	justify-content: cnter;
 }
 .title {
 	background-color: black;
@@ -118,17 +147,17 @@ margin-left: 0px;
 	/* background-image:url('../img/haircutpic.png'); */
 	background-repeat: no-repeat;
 	background-size: cover;
-	/* background-attachment: fixed; */
+	background-attachment: fixed;
 	background-position: top;
-	padding: 85px;
 	/* opacity: 0.6; */
 	background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url(../img/haircutpic.png);
 }
 .appointment__body {
-	padding: 120px 150px 85px 150px;
+	padding: 120px 30px 85px 30px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 }
 .appointment__title {
 	display: flex;
@@ -138,6 +167,7 @@ margin-left: 0px;
 	font-weight: bold;
 	color: white;
 	margin-bottom: 45px;
+	text-align: center;
 }
 .appointment__subtitle {
 	font-size: 35pt;
@@ -155,9 +185,11 @@ margin-left: 0px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 }
 .header-line__horizontal {
-	width: 320px;
+	/* width: 320px; */
+	width: 30%;
 	height: 5px;
 	background-color: black;
 }
@@ -178,18 +210,19 @@ margin-bottom: 50px;
 }
 .pricelist__item-bold {
 font-weight: bold;
+text-align: center;
 }
 .pricelist {
 padding: 0px 30px 80px;
 	display: flex;
 	justify-content: space-between;
 	align-items: end;
-
 }
 .pricelist__prices {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-left: 50px;
 }
 .pricelist__services .pricelist__item:last-child {
 margin-bottom: 0px;
@@ -204,11 +237,13 @@ margin-bottom: 0px;
 		display: flex;
 		justify-content: space-between;
 		padding: 0px 30px;
+		flex-wrap: wrap;
 	}
 	.contacts-list__list {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin-right: 50px;
 	}
 	.contacts-list__item {
 		display: flex;
@@ -218,23 +253,82 @@ margin-bottom: 0px;
 	.contacts-list__text {
 		font-size: 25pt;
 		margin-top: 25px;
+		text-align: center;
 	}
 	.contacts-list__text-bold {
 		margin-left: 15px;
 		font-weight: bold;
+	}
+	.contacts-list .contacts-list__list:last-child {
+		margin-right: 0px;
 	}
 	.geomap {
 		padding: 50px 30px;
 	}
 	.geomap__image {
 		min-width: 100%;
+		max-width: 100%;
 	}
 	.footer {
-		padding: 15px 200px 15px 30px;
+		padding: 15px 30px 15px 30px;
 		display: flex;
 		justify-content: space-between;
 		background-color: black;
 	}
 	.footer__menu {
 		color: white;
+		padding: 0px 0px 0px 120px
 	}
+	@media (max-width: 927px) {
+		.pricelist__item, .pricelist__item-bold {
+			font-size: 3vw;
+		}
+		.pricelist__prices {
+			margin-left: 10px;
+		}
+	}
+	@media (max-width:965px) {
+		.contacts-list__list {
+			margin-bottom: 80px;
+		}
+	}
+	@media (max-width: 652px) {
+		.contacts-list {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.contacts-list__list {
+			margin-right: 0px;
+		}
+	}
+	@media (max-width:848px) {
+		.title__body {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.title__working-mode {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.title__logo, .title__working-mode, .title__contacts {
+		margin-right: 0px;
+	}
+	.title__item-mode {
+		text-align: center;
+	}
+}
+@media (max-width:455px) {
+	.footer__menu {
+		padding-left: 40px;
+	}
+}
+@media (min-width:1200px) {
+	.pricelist, .contacts-list {
+		display: flex;
+		justify-content: center;
+	}
+}
